@@ -107,4 +107,40 @@
 		15 * * *
 		16 pigeon.zad3sik.edu.pl (222.67.1.27)
 	\end{verbatim}
+	
+	\medskip
+	
+	Zawartość pliku \texttt{zad3sik.edu.pl}:
+	\begin{verbatim}
+		$TTL    1h
+		@   IN  SOA ns1.zad3sik.edu.pl. root.zad3.edu.pl. (
+		        1       ; Serial
+		        604800  ; Refresh
+		        86400   ; Retry
+		        2419200 ; Expire
+		        604800) ; Negative Cache TTL
+		
+		            IN  NS  ns1.zad3sik.edu.pl.
+		            IN  NS  ns2.zad3sik.edu.pl.
+		
+		ns1         IN  A   142.27.28.98
+		ns2         IN  A   142.27.28.99
+		
+		pigeon      IN  A   222.67.1.27
+		eagle       IN  A   25.3.143.12
+		kestrel     IN  A   193.19.88.91
+		
+		R11-eth0    IN  A   207.13.56.91
+		R11-eth1    IN  A   209.85.127.100
+		
+		R12-eth0    IN  A   209.85.127.99
+		R12-eth1    IN  A   64.157.174.45
+		R12-eth2    IN  A   72.12.47.62
+		
+		R13-eth0    IN  A   64.157.174.44
+		R13-eth1    IN  A   210.21.37.1
+		
+		R14-eth0    IN  A   72.12.47.61
+		R14-eth1    IN  A   211.4.20.69
+	\end{verbatim}
 \end{document}
